@@ -1,0 +1,16 @@
+{% extends "prelogin-layout.html" %}
+
+{% block title %}Registraton{% endblock %}
+{% block content %}
+    <h1>Get Started</h1>
+
+    <form>
+        <div>
+            {{ form.username(class_='form-control',
+               placeholder='username', autocomplete='off',
+               autofocus=true)
+
+            }}
+        </div>
+    </form>
+{% endblock %}
